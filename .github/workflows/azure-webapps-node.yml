@@ -41,7 +41,7 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
-        #cache-dependency-path: ./client/package-lock.json
+        cache-dependency-path: ./opt/hostedtoolcache/node/20.19.0/x64
 
     - name: npm install, build, and test
       run: |
